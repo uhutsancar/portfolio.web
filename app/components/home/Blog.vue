@@ -11,19 +11,9 @@ defineProps<{
     :title="blog.title"
     :description="blog.description"
     :ui="{
-      container: [
-        'px-0 pt-0!',
-        'gap-6 lg:gap-8',
-      ].join(' '),
-      title: [
-        'text-left',
-        'text-xl font-medium',
-        'sm:text-xl lg:text-2xl',
-      ].join(' '),
-      description: [
-        'mt-2 text-left',
-        'text-sm text-muted',
-      ].join(' '),
+      container: 'px-0 pt-0! sm:gap-6 lg:gap-8',
+      title: 'text-left text-xl font-medium sm:text-xl lg:text-2xl',
+      description: 'mt-2 text-left text-sm text-muted',
     }"
   >
     <UBlogPosts
@@ -40,11 +30,7 @@ defineProps<{
         orientation="horizontal"
         variant="naked"
         :ui="{
-          root: [
-            'group relative',
-            'ring-0 hover:ring-0',
-            'lg:flex lg:items-start',
-          ].join(' '),
+          root: 'group relative ring-0 hover:ring-0 lg:flex lg:items-start',
           body: 'px-0!',
           header: 'hidden',
         }"
@@ -60,8 +46,8 @@ defineProps<{
               <UIcon
                 name="i-lucide-arrow-right"
                 class="
-                  size-4 text-primary
-                  opacity-0 transition-all
+                  size-4 text-primary opacity-0
+                  transition-all
                   group-hover:translate-x-1
                   group-hover:opacity-100
                 "

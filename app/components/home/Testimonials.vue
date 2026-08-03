@@ -21,11 +21,8 @@ defineProps<{
       loop
       dots
       :ui="{
-        viewport: [
-          '-mx-4 sm:-mx-12 lg:-mx-16',
-          'max-w-(--ui-container)',
-          'bg-elevated/50',
-        ].join(' '),
+        viewport:
+          '-mx-4 max-w-(--ui-container) bg-elevated/50 sm:-mx-12 lg:-mx-16',
       }"
     >
       <UPageCTA
@@ -33,33 +30,8 @@ defineProps<{
         variant="naked"
         class="rounded-none"
         :ui="{
-          container: [
-            'sm:gap-8',
-            'sm:py-12 lg:py-12',
-          ].join(' '),
-          description: [
-            'text-base! text-balance',
-            'before:absolute',
-            'before:-mt-2',
-            'before:-ml-6',
-            'before:inline-block',
-            'before:text-5xl',
-            'before:text-dimmed',
-            'before:content-[open-quote]',
-            'lg:before:-mt-4',
-            'lg:before:-ml-10',
-            'lg:before:text-7xl',
-            'after:absolute',
-            'after:mt-1',
-            'after:ml-1',
-            'after:inline-block',
-            'after:text-5xl',
-            'after:text-dimmed',
-            'after:content-[close-quote]',
-            'lg:after:mt-0',
-            'lg:after:ml-2',
-            'lg:after:text-7xl',
-          ].join(' '),
+          container: 'gap-8 py-12',
+          description: 'text-base! text-balance',
         }"
       >
         <UUser

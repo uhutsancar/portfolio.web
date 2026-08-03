@@ -10,69 +10,62 @@ defineProps<{
   <UPageSection
     :title="experience.title"
     :ui="{
-      container: 'p-0! gap-4 sm:gap-4',
-      title: [
-        'text-left',
-        'text-xl font-medium',
-        'sm:text-xl lg:text-2xl',
-      ].join(' '),
+      container: 'p-0! gap-4',
+      title: 'text-left text-xl font-medium sm:text-xl lg:text-2xl',
+      description: 'mt-2',
     }"
   >
-    <ul class="flex flex-col gap-2">
-      <Motion
-        v-for="(item, index) in experience.items"
-        :key="item.company.name"
-        as="li"
-        :initial="{
-          opacity: 0,
-          transform: 'translateY(20px)',
-        }"
-        :while-in-view="{
-          opacity: 1,
-          transform: 'translateY(0)',
-        }"
-        :transition="{
-          duration: 0.45,
-          delay: 0.2 + index * 0.15,
-        }"
-        :in-view-options="{
-          once: true,
-        }"
-        class="
-          flex items-center gap-2
-          text-nowrap text-muted
-        "
-      >
-        <time class="shrink-0 text-sm">
-          {{ item.date }}
-        </time>
-
-        <USeparator class="min-w-6 flex-1" />
-
-        <ULink
-          :to="item.company.url"
-          target="_blank"
-          class="
-            flex shrink-0 items-center gap-1
-            text-sm
-          "
+    <template #description>
+      <div class="flex flex-col gap-2">
+        <Motion
+          v-for="(item, index) in experience.items"
+          :key="item.company.name"
+          :initial="{
+            opacity: 0,
+            transform: 'translateY(20px)',
+          }"
+          :while-in-view="{
+            opacity: 1,
+            transform: 'translateY(0)',
+          }"
+          :transition="{
+            delay: 0.4 + index * 0.2,
+          }"
+          :in-view-options="{
+            once: true,
+          }"
+          class="flex items-center gap-2 text-nowrap text-muted"
         >
-          <span>
-            {{ item.position }}
-          </span>
+          <time class="text-sm">
+            {{ item.date }}
+          </time>
 
-          <span
-            class="inline-flex items-center gap-1 font-medium"
-            :style="{
-              color: item.company.color,
-            }"
+          <USeparator />
+
+          <ULink
+            :to="item.company.url"
+            target="_blank"
+            class="flex items-center gap-1"
           >
-            {{ item.company.name }}
+            <span class="text-sm">
+              {{ item.position }}
+            </span>
 
-            <UIcon :name="item.company.logo" />
-          </span>
-        </ULink>
-      </Motion>
-    </ul>
+            <span
+              class="inline-flex items-center gap-1"
+              :style="{
+                color: item.company.color,
+              }"
+            >
+              <span class="font-medium">
+                {{ item.company.name }}
+              </span>
+
+              <UIcon :name="item.company.logo" />
+            </span>
+          </ULink>
+        </Motion>
+      </div>
+    </template>
   </UPageSection>
 </template>

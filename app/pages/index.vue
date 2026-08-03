@@ -1,14 +1,8 @@
 <script setup lang="ts">
 const { data: page } = await useAsyncData(
   'home-page',
-  () => {
-    return queryCollection('index').first()
-  },
+  () => queryCollection('index').first(),
 )
-
-
-
-
 
 if (!page.value) {
   throw createError({
@@ -25,12 +19,8 @@ if (!page.value) {
 
     <UPageSection
       :ui="{
-        container: [
-          'pt-0!',
-          'lg:grid',
-          'lg:grid-cols-2',
-          'lg:gap-8',
-        ].join(' '),
+        container:
+          'pt-0! lg:grid lg:grid-cols-2 lg:gap-8',
       }"
     >
       <HomeAbout :about="page.about" />
