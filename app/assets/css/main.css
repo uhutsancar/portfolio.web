@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --ui-container: var(--container-4xl);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+}
+
+::selection {
+  color: #282a30;
+  background-color: #c8c8c8;
+}
+
+.dark ::selection {
+  color: #ffffff;
+  background-color: #474747;
+}
