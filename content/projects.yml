@@ -1,0 +1,26 @@
+title: Designing Interfaces, Building Experiences.
+
+description: >-
+  I've worked on a variety of projects, focusing on creating
+  intuitive digital experiences where thoughtful design meets
+  clean code. Here are some highlights I'm proud of, showcasing
+  my process from concept to execution.
+
+seo:
+  title: Projects
+  description: >-
+    Selected UX/UI design and front-end development projects
+    showcasing work from concept to execution.
+
+links:
+  - label: Let's talk
+    to: https://cal.com/
+    target: _blank
+    color: neutral
+    variant: solid
+
+  - label: Email me
+    to: mailto:ui-pro@nuxt.com
+    color: info
+    variant: solid
+    

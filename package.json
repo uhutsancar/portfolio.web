@@ -20,6 +20,7 @@
     "better-sqlite3": "^13.0.2",
     "motion-v": "^2.3.0",
     "nuxt": "^4.5.1",
+    "nuxt-studio": "1.7.0",
     "tailwindcss": "^4.3.3",
     "vue": "^3.5.40",
     "vue-router": "^5.2.0"

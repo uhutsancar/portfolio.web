@@ -39,3 +39,4 @@ if (!page.value) {
     <HomeFaq :faq="page.faq" />
   </UPage>
 </template>
+

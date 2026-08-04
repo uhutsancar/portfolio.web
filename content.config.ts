@@ -24,7 +24,7 @@ const profileImageSchema = z.object({
   alt: z.string(),
 })
 
-const actionSchema = z.object({
+const buttonSchema = z.object({
   label: z.string(),
   to: z.string(),
 
@@ -33,6 +33,32 @@ const actionSchema = z.object({
       input: 'icon',
     })
     .optional(),
+
+  color: z.enum([
+    'primary',
+    'neutral',
+    'success',
+    'warning',
+    'error',
+    'info',
+  ]).optional(),
+
+  size: z.enum([
+    'xs',
+    'sm',
+    'md',
+    'lg',
+    'xl',
+  ]).optional(),
+
+  variant: z.enum([
+    'solid',
+    'outline',
+    'subtle',
+    'soft',
+    'ghost',
+    'link',
+  ]).optional(),
 
   target: z.enum([
     '_blank',
@@ -90,7 +116,7 @@ export default defineContentConfig({
 
           profile: profileImageSchema,
 
-          primaryAction: actionSchema,
+          primaryAction: buttonSchema,
 
           availability: availabilitySchema,
 
@@ -148,6 +174,45 @@ export default defineContentConfig({
             }),
           ),
         }),
+      }),
+    }),
+
+    pages: defineCollection({
+      type: 'page',
+
+      source: [
+        {
+          include: 'projects.yml',
+        },
+      ],
+
+      schema: z.object({
+        links: z.array(buttonSchema),
+      }),
+    }),
+
+    projects: defineCollection({
+      type: 'data',
+      source: 'projects/*.yml',
+
+      schema: z.object({
+        title: z.string().nonempty(),
+
+        description: z.string().nonempty(),
+
+        image: z.string()
+          .nonempty()
+          .editor({
+            input: 'media',
+          }),
+
+        url: z.string().nonempty(),
+
+        tags: z.array(
+          z.string(),
+        ),
+
+        date: z.date(),
       }),
     }),
   },
