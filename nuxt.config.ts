@@ -11,4 +11,15 @@ export default defineNuxtConfig({
     'motion-v/nuxt',
     'nuxt-studio',
   ],
+
+studio: {
+  repository: {
+    provider: 'github',
+    owner: 'uhutsancar',
+    repo: 'portfolio.web',
+    branch: 'main',
+  },
+},
+
+  
 })
