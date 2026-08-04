@@ -184,10 +184,13 @@ export default defineContentConfig({
         {
           include: 'projects.yml',
         },
+        {
+          include: 'blog.yml',
+        },
       ],
 
       schema: z.object({
-        links: z.array(buttonSchema),
+        links: z.array(buttonSchema).optional(),
       }),
     }),
 
@@ -211,6 +214,25 @@ export default defineContentConfig({
         tags: z.array(
           z.string(),
         ),
+
+        date: z.date(),
+      }),
+    }),
+
+    blog: defineCollection({
+      type: 'data',
+      source: 'blog/*.yml',
+
+      schema: z.object({
+        title: z.string().nonempty(),
+
+        description: z.string().nonempty(),
+
+        image: z.string()
+          .nonempty()
+          .editor({
+            input: 'media',
+          }),
 
         date: z.date(),
       }),
