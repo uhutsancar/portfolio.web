@@ -85,16 +85,34 @@ useSeoMeta({
         orientation="vertical"
         class="max-w-2xl"
       >
-        <UBlogPost
-          v-for="post in posts"
+        <Motion
+          v-for="(post, index) in posts"
           :key="post.id"
-          :title="post.title"
-          :description="post.description"
-          :image="post.image"
-          :date="formatDate(post.date)"
-          orientation="horizontal"
-          variant="naked"
-        />
+          :initial="{
+            opacity: 0,
+            transform: 'translateY(10px)',
+          }"
+          :while-in-view="{
+            opacity: 1,
+            transform: 'translateY(0)',
+          }"
+          :transition="{
+            duration: 0.4,
+            delay: index * 0.1,
+          }"
+          :in-view-options="{
+            once: true,
+          }"
+        >
+          <UBlogPost
+            :title="post.title"
+            :description="post.description"
+            :image="post.image"
+            :date="formatDate(post.date)"
+            orientation="horizontal"
+            variant="naked"
+          />
+        </Motion>
       </UBlogPosts>
     </UPageSection>
   </UPage>

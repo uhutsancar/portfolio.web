@@ -313,5 +313,22 @@ export default defineContentConfig({
         ),
       }),
     }),
+
+    about: defineCollection({
+      type: 'page',
+
+      source: 'about.yml',
+
+      schema: z.object({
+        profile: profileImageSchema,
+
+        content: z.string()
+          .nonempty(),
+
+        images: z.array(
+          imageSchema,
+        ),
+      }),
+    }),
   },
 })
