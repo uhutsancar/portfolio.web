@@ -280,5 +280,38 @@ export default defineContentConfig({
         author: blogAuthorSchema,
       }),
     }),
+
+    speaking: defineCollection({
+      type: 'page',
+
+      source: 'speaking.yml',
+
+      schema: z.object({
+        links: z.array(
+          buttonSchema,
+        ),
+
+        events: z.array(
+          z.object({
+            category: z.enum([
+              'Conference',
+              'Live talk',
+              'Podcast',
+            ]),
+
+            title: z.string()
+              .nonempty(),
+
+            date: z.date(),
+
+            location: z.string()
+              .nonempty(),
+
+            url: z.string()
+              .optional(),
+          }),
+        ),
+      }),
+    }),
   },
 })
