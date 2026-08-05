@@ -26,6 +26,7 @@ const profileImageSchema = z.object({
 
 const buttonSchema = z.object({
   label: z.string(),
+
   to: z.string(),
 
   icon: z.string()
@@ -68,15 +69,21 @@ const buttonSchema = z.object({
 
 const availabilitySchema = z.object({
   enabled: z.boolean(),
+
   availableLabel: z.string(),
+
   unavailableLabel: z.string(),
+
   to: z.string().optional(),
 })
 
 const articleSchema = z.object({
   title: z.string(),
+
   description: z.string(),
+
   date: z.string(),
+
   to: z.string(),
 })
 
@@ -85,6 +92,7 @@ const testimonialSchema = z.object({
 
   author: z.object({
     name: z.string(),
+
     description: z.string(),
 
     avatar: z.object({
@@ -93,6 +101,7 @@ const testimonialSchema = z.object({
       }),
 
       srcset: z.string().optional(),
+
       alt: z.string().optional(),
     }),
   }),
@@ -100,18 +109,35 @@ const testimonialSchema = z.object({
 
 const faqQuestionSchema = z.object({
   label: z.string(),
+
   content: z.string(),
+})
+
+const blogAuthorSchema = z.object({
+  name: z.string(),
+
+  description: z.string().optional(),
+
+  username: z.string().optional(),
+
+  twitter: z.string().optional(),
+
+  to: z.string().optional(),
+
+  avatar: imageSchema.optional(),
 })
 
 export default defineContentConfig({
   collections: {
     index: defineCollection({
       type: 'page',
+
       source: 'index.yml',
 
       schema: z.object({
         hero: z.object({
           title: z.string(),
+
           description: z.string(),
 
           profile: profileImageSchema,
@@ -120,11 +146,14 @@ export default defineContentConfig({
 
           availability: availabilitySchema,
 
-          images: z.array(imageSchema),
+          images: z.array(
+            imageSchema,
+          ),
         }),
 
         about: z.object({
           title: z.string(),
+
           description: z.string(),
         }),
 
@@ -134,6 +163,7 @@ export default defineContentConfig({
           items: z.array(
             z.object({
               position: z.string(),
+
               date: z.string(),
 
               company: z.object({
@@ -144,6 +174,7 @@ export default defineContentConfig({
                 }),
 
                 url: z.string(),
+
                 color: z.string(),
               }),
             }),
@@ -152,8 +183,12 @@ export default defineContentConfig({
 
         blog: z.object({
           title: z.string(),
+
           description: z.string(),
-          items: z.array(articleSchema),
+
+          items: z.array(
+            articleSchema,
+          ),
         }),
 
         testimonials: z.array(
@@ -162,6 +197,7 @@ export default defineContentConfig({
 
         faq: z.object({
           title: z.string(),
+
           description: z.string(),
 
           categories: z.array(
@@ -190,18 +226,23 @@ export default defineContentConfig({
       ],
 
       schema: z.object({
-        links: z.array(buttonSchema).optional(),
+        links: z.array(
+          buttonSchema,
+        ).optional(),
       }),
     }),
 
     projects: defineCollection({
       type: 'data',
+
       source: 'projects/*.yml',
 
       schema: z.object({
-        title: z.string().nonempty(),
+        title: z.string()
+          .nonempty(),
 
-        description: z.string().nonempty(),
+        description: z.string()
+          .nonempty(),
 
         image: z.string()
           .nonempty()
@@ -209,7 +250,8 @@ export default defineContentConfig({
             input: 'media',
           }),
 
-        url: z.string().nonempty(),
+        url: z.string()
+          .nonempty(),
 
         tags: z.array(
           z.string(),
@@ -220,13 +262,14 @@ export default defineContentConfig({
     }),
 
     blog: defineCollection({
-      type: 'data',
-      source: 'blog/*.yml',
+      type: 'page',
+
+      source: 'blog/*.md',
 
       schema: z.object({
-        title: z.string().nonempty(),
+        minRead: z.number(),
 
-        description: z.string().nonempty(),
+        date: z.date(),
 
         image: z.string()
           .nonempty()
@@ -234,7 +277,7 @@ export default defineContentConfig({
             input: 'media',
           }),
 
-        date: z.date(),
+        author: blogAuthorSchema,
       }),
     }),
   },

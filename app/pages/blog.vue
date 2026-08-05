@@ -25,7 +25,9 @@ const { data: posts } = await useAsyncData(
   },
 )
 
-function formatDate(value: Date | string) {
+function formatDate(
+  value: Date | string,
+) {
   return new Intl.DateTimeFormat(
     'en-US',
     {
@@ -34,7 +36,9 @@ function formatDate(value: Date | string) {
       year: 'numeric',
       timeZone: 'UTC',
     },
-  ).format(new Date(value))
+  ).format(
+    new Date(value),
+  )
 }
 
 const title
@@ -47,12 +51,15 @@ const description
 
 useSeoMeta({
   title,
+
   description,
 
   ogTitle: title,
+
   ogDescription: description,
 
   twitterTitle: title,
+
   twitterDescription: description,
 })
 </script>
@@ -63,6 +70,7 @@ useSeoMeta({
       :title="page.title"
       :description="page.description"
       :ui="{
+        container: 'items-start',
         title: 'mx-0 text-left',
         description: 'mx-0 text-left',
       }"
@@ -73,40 +81,21 @@ useSeoMeta({
         container: 'pt-0!',
       }"
     >
-      <!-- <Motion
-        v-for="(project, index) in projects"
-        :key="project.title"
-        :initial="{
-          opacity: 0,
-          transform: 'translateY(10px)',
-        }"
-        :while-in-view="{
-          opacity: 1,
-          transform: 'translateY(0)',
-        }"
-        :transition="{
-          delay: 0.2 * index,
-        }"
-        :in-view-options="{
-          once: true,
-        }"
-      > -->
-        <UBlogPosts
-          orientation="vertical"
-          class="max-w-2xl"
-        >
-          <UBlogPost
-            v-for="post in posts"
-            :key="post.title"
-            :title="post.title"
-            :description="post.description"
-            :image="post.image"
-            :date="formatDate(post.date)"
-            orientation="horizontal"
-            variant="naked"
-          />
-        </UBlogPosts>
-      <!-- </Motion> -->
+      <UBlogPosts
+        orientation="vertical"
+        class="max-w-2xl"
+      >
+        <UBlogPost
+          v-for="post in posts"
+          :key="post.id"
+          :title="post.title"
+          :description="post.description"
+          :image="post.image"
+          :date="formatDate(post.date)"
+          orientation="horizontal"
+          variant="naked"
+        />
+      </UBlogPosts>
     </UPageSection>
   </UPage>
 </template>
