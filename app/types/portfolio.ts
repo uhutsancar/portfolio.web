@@ -112,6 +112,13 @@ export interface HomeFaq {
   categories: HomeFaqCategory[]
 }
 
+export interface ContactFormState {
+  name: string
+  email: string
+  subject: string
+  message: string
+}
+
 export interface PortfolioAppConfig {
   navigation: NavigationMenuItem[]
 

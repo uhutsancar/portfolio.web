@@ -14,7 +14,7 @@ seo:
 
 links:
   - label: Invite me to speak
-    to: mailto:ui-pro@nuxt.com
+    to: /contact
     color: info
     variant: solid
 

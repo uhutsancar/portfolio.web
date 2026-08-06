@@ -12,14 +12,40 @@ export default defineNuxtConfig({
     'nuxt-studio',
   ],
 
-studio: {
-  repository: {
-    provider: 'github',
-    owner: 'uhutsancar',
-    repo: 'portfolio.web',
-    branch: 'main',
-  },
-},
+  studio: {
+    repository: {
+      provider: 'github',
+      owner: 'uhutsancar',
+      repo: 'portfolio.web',
+      branch: 'main',
+    },
 
-  
+ 
+    git: {
+      commit: {
+        messagePrefix: 'content:',
+      },
+    },
+
+    editor: {
+      iconLibraries: [
+        'lucide',
+        'simple-icons',
+      ],
+    },
+  },
+
+  content: {
+    experimental: {
+      sqliteConnector: 'native',
+    },
+  },
+
+  runtimeConfig: {
+    resend: {
+      apiKey: '',
+      from: 'Portfolio <onboarding@resend.dev>',
+      to: '',
+    },
+  },
 })

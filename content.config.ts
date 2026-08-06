@@ -4,34 +4,50 @@ import {
   z,
 } from '@nuxt/content'
 
+const altTextSchema = z.string().editor({
+  label: 'Alt text',
+  description:
+    'Describes the image for screen readers and search engines.',
+})
+
 const imageSchema = z.object({
   src: z.string().editor({
     input: 'media',
+    label: 'Image',
   }),
 
-  alt: z.string(),
+  alt: altTextSchema,
 })
 
 const profileImageSchema = z.object({
   light: z.string().editor({
     input: 'media',
+    label: 'Light mode image',
   }),
 
   dark: z.string().editor({
     input: 'media',
+    label: 'Dark mode image',
   }),
 
-  alt: z.string(),
+  alt: altTextSchema,
 })
 
 const buttonSchema = z.object({
-  label: z.string(),
+  label: z.string().editor({
+    label: 'Button text',
+  }),
 
-  to: z.string(),
+  to: z.string().editor({
+    label: 'Link',
+    description:
+      'An internal path such as /contact, or a full https:// URL.',
+  }),
 
   icon: z.string()
     .editor({
       input: 'icon',
+      label: 'Icon',
     })
     .optional(),
 
@@ -68,13 +84,27 @@ const buttonSchema = z.object({
 })
 
 const availabilitySchema = z.object({
-  enabled: z.boolean(),
+  enabled: z.boolean().editor({
+    label: 'Available for work',
+    description:
+      'Switches the hero badge between the two labels below.',
+  }),
 
-  availableLabel: z.string(),
+  availableLabel: z.string().editor({
+    label: 'Label when available',
+  }),
 
-  unavailableLabel: z.string(),
+  unavailableLabel: z.string().editor({
+    label: 'Label when unavailable',
+  }),
 
-  to: z.string().optional(),
+  to: z.string()
+    .optional()
+    .editor({
+      label: 'Badge link',
+      description:
+        'Optional. Where the badge points, e.g. /contact.',
+    }),
 })
 
 const articleSchema = z.object({
@@ -88,7 +118,10 @@ const articleSchema = z.object({
 })
 
 const testimonialSchema = z.object({
-  quote: z.string(),
+  quote: z.string().editor({
+    input: 'textarea',
+    label: 'Quote',
+  }),
 
   author: z.object({
     name: z.string(),
@@ -108,9 +141,14 @@ const testimonialSchema = z.object({
 })
 
 const faqQuestionSchema = z.object({
-  label: z.string(),
+  label: z.string().editor({
+    label: 'Question',
+  }),
 
-  content: z.string(),
+  content: z.string().editor({
+    input: 'textarea',
+    label: 'Answer',
+  }),
 })
 
 const blogAuthorSchema = z.object({
@@ -314,6 +352,40 @@ export default defineContentConfig({
       }),
     }),
 
+    contact: defineCollection({
+      type: 'page',
+
+      source: 'contact.yml',
+
+      schema: z.object({
+        form: z.object({
+          submitLabel: z.string()
+            .nonempty()
+            .editor({
+              label: 'Submit button',
+            }),
+
+          successMessage: z.string()
+            .nonempty()
+            .editor({
+              input: 'textarea',
+              label: 'Success message',
+              description:
+                'Shown once a message has been delivered.',
+            }),
+
+          errorMessage: z.string()
+            .nonempty()
+            .editor({
+              input: 'textarea',
+              label: 'Error message',
+              description:
+                'Shown when the message could not be sent.',
+            }),
+        }),
+      }),
+    }),
+
     about: defineCollection({
       type: 'page',
 
@@ -323,7 +395,13 @@ export default defineContentConfig({
         profile: profileImageSchema,
 
         content: z.string()
-          .nonempty(),
+          .nonempty()
+          .editor({
+            input: 'textarea',
+            label: 'Body',
+            description:
+              'Markdown is supported, including [links](/contact).',
+          }),
 
         images: z.array(
           imageSchema,

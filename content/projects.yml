@@ -20,7 +20,7 @@ links:
     variant: solid
 
   - label: Email me
-    to: mailto:ui-pro@nuxt.com
+    to: /contact
     color: info
     variant: solid
     

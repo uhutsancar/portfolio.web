@@ -24,6 +24,10 @@ const portfolioConfig = {
       label: 'About',
       to: '/about',
     },
+    {
+      label: 'Contact',
+      to: '/contact',
+    },
   ],
 
   footer: {
