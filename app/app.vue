@@ -12,6 +12,8 @@ useHead({
     lang: 'en',
   },
 
+  titleTemplate: (title) => title ? `${title} — Emma Thompson` : 'Emma Thompson — UX/UI Designer',
+
   meta: [
     {
       charset: 'utf-8',
@@ -24,12 +26,34 @@ useHead({
       name: 'theme-color',
       content: themeColor,
     },
+    {
+      name: 'robots',
+      content: 'index, follow',
+    },
   ],
 
   link: [
     {
       rel: 'icon',
       href: '/favicon.ico',
+    },
+    {
+      rel: 'preconnect',
+      href: 'https://fonts.googleapis.com',
+    },
+    {
+      rel: 'preconnect',
+      href: 'https://fonts.gstatic.com',
+      crossorigin: '',
+    },
+    {
+      rel: 'dns-prefetch',
+      href: 'https://fonts.googleapis.com',
+    },
+    {
+      rel: 'sitemap',
+      type: 'application/xml',
+      href: '/sitemap.xml',
     },
   ],
 })

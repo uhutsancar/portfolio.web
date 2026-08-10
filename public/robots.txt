@@ -1,2 +1,4 @@
-User-Agent: *
-Disallow:
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-web-ruddy-eight.vercel.app/sitemap.xml

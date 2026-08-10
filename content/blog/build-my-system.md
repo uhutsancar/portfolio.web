@@ -1,23 +1,15 @@
 ---
-title: "How I Built My Design System from Scratch"
-
-description: >-
-  A practical guide to creating your own design system, from initial
-  audit to implementation, and the lessons learned along the way.
-
-date: 2025-03-05
-
-minRead: 6
-
-image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-
+title: How I Built My Design System from Scratch
 author:
-  name: "Emma Thompson"
-  description: "UX/UI Designer"
-
+  name: Emma Thompson
+  description: UX/UI Designer
   avatar:
-    src: "https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=200&auto=format&fit=crop"
-    alt: "Emma Thompson"
+    src: https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=200&auto=format&fit=crop
+    alt: Emma Thompson
+date: 2025-03-05
+description: A practical guide to creating your own design system, from initial audit to implementation, and the lessons learned along the way.
+image: https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+minRead: 6
 ---
 
 I started building a personal design system after noticing that similar interface problems were being solved differently across multiple projects.
@@ -63,7 +55,7 @@ Each component included its variants, sizes, states, accessibility requirements,
 
 ## Connecting design and code
 
- The design library and the front-end implementation used the same terminology.
+The design library and the front-end implementation used the same terminology.
 
 A primary button in the design file had the same name, variants, and states as the corresponding interface component.
 

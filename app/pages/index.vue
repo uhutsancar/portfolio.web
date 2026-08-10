@@ -11,6 +11,19 @@ if (!page.value) {
     fatal: true,
   })
 }
+
+const title = page.value.hero.title
+const description = page.value.hero.description
+
+useSeoMeta({
+  title,
+  description,
+  ogTitle: title,
+  ogDescription: description,
+  twitterTitle: title,
+  twitterDescription: description,
+  twitterCard: 'summary_large_image',
+})
 </script>
 
 <template>

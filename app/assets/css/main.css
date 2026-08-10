@@ -8,6 +8,18 @@
   --font-serif: 'Instrument Serif', serif;
 }
 
+@layer base {
+  @font-face {
+    font-family: 'Public Sans';
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Instrument Serif';
+    font-display: swap;
+  }
+}
+
 :root {
   --ui-container: var(--container-4xl);
 
@@ -22,4 +34,19 @@
     color: #ffffff;
     background-color: #474747;
   }
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(-16px);
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(16px);
 }

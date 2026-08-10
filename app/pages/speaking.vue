@@ -85,6 +85,7 @@ useSeoMeta({
   ogDescription: description,
   twitterTitle: title,
   twitterDescription: description,
+  twitterCard: 'summary_large_image',
 })
 </script>
 

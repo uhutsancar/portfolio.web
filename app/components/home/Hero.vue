@@ -46,6 +46,7 @@ function reveal(delay = 0) {
           :alt="hero.profile.alt"
           size="3xl"
           class="ring ring-default ring-offset-3 ring-offset-bg"
+          :img-attrs="{ fetchpriority: 'high', loading: 'eager' }"
         />
       </Motion>
     </template>
@@ -145,6 +146,8 @@ function reveal(delay = 0) {
           height="234"
           class="aspect-square rounded-lg object-cover"
           :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'"
+          loading="lazy"
+          decoding="async"
         />
       </Motion>
     </UMarquee>

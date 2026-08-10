@@ -39,6 +39,8 @@ useSeoMeta({
   twitterDescription: description,
 
   twitterImage: page.value.profile.light,
+
+  twitterCard: 'summary_large_image',
 })
 </script>
 

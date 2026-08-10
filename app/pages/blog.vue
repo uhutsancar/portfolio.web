@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import NumberFlow from '@number-flow/vue'
+
 const { data: page } = await useAsyncData(
   'blog-page',
   () => {
@@ -24,6 +26,8 @@ const { data: posts } = await useAsyncData(
       .all()
   },
 )
+
+const postCount = computed(() => posts.value?.length ?? 0)
 
 function formatDate(
   value: Date | string,
@@ -61,6 +65,8 @@ useSeoMeta({
   twitterTitle: title,
 
   twitterDescription: description,
+
+  twitterCard: 'summary_large_image',
 })
 </script>
 
@@ -68,13 +74,25 @@ useSeoMeta({
   <UPage v-if="page">
     <UPageHero
       :title="page.title"
-      :description="page.description"
       :ui="{
         container: 'items-start',
         title: 'mx-0 text-left',
         description: 'mx-0 text-left',
       }"
-    />
+    >
+      <template #description>
+        <p class="mx-0 text-left text-base text-muted">
+          {{ page.description }}
+        </p>
+        <p class="mx-0 mt-3 flex items-center gap-1.5 text-left text-sm text-muted">
+          <NumberFlow
+            :value="postCount"
+            class="font-semibold tabular-nums text-highlighted"
+          />
+          <span>posts published</span>
+        </p>
+      </template>
+    </UPageHero>
 
     <UPageSection
       :ui="{
