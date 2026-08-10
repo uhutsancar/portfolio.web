@@ -38,19 +38,6 @@ useHead({
       href: '/favicon.ico',
     },
     {
-      rel: 'preconnect',
-      href: 'https://fonts.googleapis.com',
-    },
-    {
-      rel: 'preconnect',
-      href: 'https://fonts.gstatic.com',
-      crossorigin: '',
-    },
-    {
-      rel: 'dns-prefetch',
-      href: 'https://fonts.googleapis.com',
-    },
-    {
       rel: 'sitemap',
       type: 'application/xml',
       href: '/sitemap.xml',
