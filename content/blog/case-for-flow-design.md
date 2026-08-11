@@ -1,26 +1,15 @@
 ---
 title: The Case for Slow Design in a Fast-Paced Digital World
-
-description: >-
-  Why designing digital experiences that encourage users
-  to slow down and engage deeply can lead to more meaningful
-  interactions and better outcomes.
-
-date: 2025-01-28
-
-minRead: 7
-
-image: "https://images.pexels.com/photos/4050314/pexels-photo-4050314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-
 author:
   name: Emma Thompson
-
   description: UX/UI Designer
-
   avatar:
-    src: "https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=200&auto=format&fit=crop"
-
+    src: https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=200&auto=format&fit=crop
     alt: Emma Thompson
+date: 2025-01-28
+description: Why designing digital experiences that encourage users to slow down and engage deeply can lead to more meaningful interactions and better outcomes.
+image: https://images.pexels.com/photos/4050314/pexels-photo-4050314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+minRead: 7
 ---
 
 Many digital products are designed around speed, immediate
