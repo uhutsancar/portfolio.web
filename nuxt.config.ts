@@ -19,6 +19,7 @@ export default defineNuxtConfig({
   ],
 
   studio: {
+    route: '/admin',
     repository: {
       provider: 'github',
       owner: 'uhutsancar',
@@ -106,17 +107,3 @@ export default defineNuxtConfig({
     },
   },
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
