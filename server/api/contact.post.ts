@@ -22,19 +22,27 @@ function validate(
   const errors: string[] = []
 
   if (name.length < 2 || name.length > 100) {
-    errors.push('Name must be between 2 and 100 characters.')
+    errors.push(
+      'Name must be between 2 and 100 characters.',
+    )
   }
 
   if (!emailPattern.test(email) || email.length > 254) {
-    errors.push('A valid email address is required.')
+    errors.push(
+      'A valid email address is required.',
+    )
   }
 
   if (subject.length > 150) {
-    errors.push('Subject must be 150 characters or less.')
+    errors.push(
+      'Subject must be 150 characters or less.',
+    )
   }
 
   if (message.length < 10 || message.length > 2000) {
-    errors.push('Message must be between 10 and 2000 characters.')
+    errors.push(
+      'Message must be between 10 and 2000 characters.',
+    )
   }
 
   if (errors.length) {
@@ -60,39 +68,50 @@ export default defineEventHandler(async (event) => {
     resend: options,
   } = useRuntimeConfig(event)
 
-  if (!options.apiKey || !options.to) {
+  if (
+    !options.apiKey
+    || !options.from
+    || !options.to
+  ) {
     throw createError({
       statusCode: 500,
       statusMessage: 'Email service is not configured',
     })
   }
 
+  const body = await readBody(event)
+
   const payload = validate(
-    await readBody(event) ?? {},
+    body ?? {},
   )
 
-  const { emails } = useResend()
+  const resend = useResend()
 
-  const { error } = await emails.send({
+  const { error } = await resend.emails.send({
     from: options.from,
     to: [options.to],
     replyTo: payload.email,
     subject: `[Portfolio] ${payload.subject}`,
-
     text: [
       `Name: ${payload.name}`,
       `Email: ${payload.email}`,
+      '',
+      `Subject: ${payload.subject}`,
       '',
       payload.message,
     ].join('\n'),
   })
 
   if (error) {
-    console.error('[contact] Resend error:', error)
+    console.error(
+      '[contact] Resend error:',
+      error,
+    )
 
     throw createError({
       statusCode: 502,
-      statusMessage: 'Unable to send your message right now',
+      statusMessage:
+        'Unable to send your message right now',
     })
   }
 

@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
 
   app: {
@@ -27,7 +26,6 @@ export default defineNuxtConfig({
       branch: 'main',
     },
 
- 
     git: {
       commit: {
         messagePrefix: 'content:',
@@ -62,21 +60,48 @@ export default defineNuxtConfig({
 
   nitro: {
     routeRules: {
-      '/sitemap.xml': { headers: { 'Cache-Control': 'public, max-age=86400' } },
-      '/robots.txt': { headers: { 'Cache-Control': 'public, max-age=86400' } },
-      '/': { isr: 3600 },
-      '/about': { isr: 3600 },
-      '/projects': { isr: 3600 },
-      '/blog': { isr: 3600 },
-      '/speaking': { isr: 3600 },
-      '/contact': { isr: 3600 },
+      '/sitemap.xml': {
+        headers: {
+          'Cache-Control': 'public, max-age=86400',
+        },
+      },
+
+      '/robots.txt': {
+        headers: {
+          'Cache-Control': 'public, max-age=86400',
+        },
+      },
+
+      '/': {
+        isr: 3600,
+      },
+
+      '/about': {
+        isr: 3600,
+      },
+
+      '/projects': {
+        isr: 3600,
+      },
+
+      '/blog': {
+        isr: 3600,
+      },
+
+      '/speaking': {
+        isr: 3600,
+      },
+
+      '/contact': {
+        isr: 3600,
+      },
     },
   },
 
   runtimeConfig: {
     resend: {
       apiKey: '',
-      from: 'Portfolio <onboarding@resend.dev>',
+      from: '',
       to: '',
     },
   },
