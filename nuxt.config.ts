@@ -28,6 +28,10 @@ export default defineNuxtConfig({
       },
     },
 
+    repository: {
+      provider: 'github',
+    },
+
     editor: {
       iconLibraries: [
         'lucide',
