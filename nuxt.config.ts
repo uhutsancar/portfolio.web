@@ -16,17 +16,11 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'motion-v/nuxt',
     'nuxt-studio',
-    '@vercel/analytics',
+    // '@vercel/analytics',
   ],
 
   studio: {
     route: '/admin',
-    repository: {
-      provider: 'github',
-      owner: 'uhutsancar',
-      repo: 'portfolio.web',
-      branch: 'main',
-    },
 
     git: {
       commit: {
