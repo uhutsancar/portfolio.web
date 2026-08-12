@@ -55,17 +55,11 @@ const description
 
 useSeoMeta({
   title,
-
   description,
-
   ogTitle: title,
-
   ogDescription: description,
-
   twitterTitle: title,
-
   twitterDescription: description,
-
   twitterCard: 'summary_large_image',
 })
 </script>
@@ -127,8 +121,10 @@ useSeoMeta({
             :description="post.description"
             :image="post.image"
             :date="formatDate(post.date)"
+            :to="post.path"
             orientation="horizontal"
             variant="naked"
+            class="block transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-[1.01] cursor-pointer"
           />
         </Motion>
       </UBlogPosts>
