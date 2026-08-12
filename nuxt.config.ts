@@ -21,23 +21,6 @@ export default defineNuxtConfig({
 
   studio: {
     route: '/admin',
-
-    git: {
-      commit: {
-        messagePrefix: 'content:',
-      },
-    },
-
-    repository: {
-      provider: 'github',
-    },
-
-    editor: {
-      iconLibraries: [
-        'lucide',
-        'simple-icons',
-      ],
-    },
   },
 
   content: {
