@@ -9,10 +9,10 @@ const themeColor = computed(() => {
 
 useHead({
   htmlAttrs: {
-    lang: 'en',
+    lang: 'tr',
   },
 
-  titleTemplate: (title) => title ? `${title} — Emma Thompson` : 'Emma Thompson — UX/UI Designer',
+  titleTemplate: (title) => title ? `${title} — Uhut Sancar` : 'Uhut Sancar — Frontend Developer',
 
   meta: [
     {
@@ -35,7 +35,30 @@ useHead({
   link: [
     {
       rel: 'icon',
+      sizes: 'any',
       href: '/favicon.ico',
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      media: '(prefers-color-scheme: light)',
+      href: '/profile_black.png',
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      media: '(prefers-color-scheme: dark)',
+      href: '/profile_white.png',
+    },
+    {
+      rel: 'apple-touch-icon',
+      href: '/profile_black.png',
+    },
+    {
+      rel: 'alternate',
+      type: 'application/rss+xml',
+      title: 'Uhut Sancar — Blog',
+      href: '/rss.xml',
     },
     {
       rel: 'sitemap',

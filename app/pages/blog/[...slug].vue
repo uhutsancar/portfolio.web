@@ -72,6 +72,8 @@ function formatDate(value: Date | string) {
             v-if="page.image"
             :src="page.image"
             :alt="page.title"
+            width="896"
+            height="300"
             class="h-75 w-full rounded-lg object-cover object-center"
           />
 

@@ -70,12 +70,9 @@ faq:
         - label: Şu anda yeni bir pozisyona açık mısın?
           content: Evet. Frontend ağırlıklı veya full-stack pozisyonlar için iletişime geçebilirsiniz. En hızlı şekilde iletişim sayfasındaki formdan veya sancaruhut@gmail.com adresinden ulaşabilirsiniz.
 hero:
-  title: "\tMerhaba, ben Uhut Sancar - Frontend Developer"
+  headline: Frontend Developer
+  title: Uhut Sancar
   description: Kullanıcı odaklı, performanslı ve erişilebilir web ve mobil ürünler geliştiriyorum. Bursa'da yaşıyorum; Nuxt, Vue, Angular ve React ekosistemlerinde çalışıyor, backend tarafında Node.js ve MongoDB kullanıyorum.
-  profile:
-    light: /profile_white.png
-    dark: /profile_black.png
-    alt: Uhut Sancar profile picture
   primaryAction:
     label: Projelerime göz at
     to: /projects
@@ -105,25 +102,49 @@ hero:
       alt: Random Image 8
     - src: /hero/random-9.avif
       alt: Random Image 9
-testimonials:
-  - quote: Emma's approach to UX design completely transformed our product. She has a rare ability to balance beautiful aesthetics with functional simplicity. The redesign not only looked better, but it reduced our customer support tickets by 40% and increased conversion rates across all key metrics.
-    author:
-      name: Sarah Chen
-      description: Product Director at Bloom Finance
-      avatar:
-        src: https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=facearea&facepad=2&w=80&h=80&q=80
-        alt: Sarah Chen
-  - quote: Working with Emma was the best decision we made for our startup. She didn't just deliver designs — she challenged our assumptions, conducted thorough user research, and created an experience that truly resonated with our audience. Her technical knowledge of front-end development meant the handoff to our engineering team was seamless.
-    author:
-      name: Michael Rodriguez
-      description: Co-founder of Wavelength Music
-      avatar:
-        src: https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=facearea&facepad=2&w=80&h=80&q=80
-        alt: Michael Rodriguez
-  - quote: Emma stands out in her ability to translate complex sustainability data into intuitive interfaces. Her work on EcoTrack wasn't just visually stunning — it fundamentally changed how our users interact with environmental information. She approaches each problem with both creativity and analytical rigor, which is exactly what we needed.
-    author:
-      name: Dr. Aisha Johnson
-      description: Chief Innovation Officer at GreenTech Solutions
-      avatar:
-        src: https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=facearea&facepad=2&w=80&h=80&q=80
-        alt: Dr. Aisha Johnson
+seo:
+  title: Frontend Developer
+  description: Uhut Sancar — Nuxt, Vue, Angular ve React ile çalışan; backend, mobil ve cloud tarafında da geliştirme yapan Frontend Developer.
+stack:
+  title: Teknolojiler
+  description: Günlük olarak kullandığım araçlar ve üzerinde çalıştığım ekosistemler.
+  categories:
+    - title: Frontend
+      icon: i-lucide-app-window
+      items:
+        - Nuxt
+        - Vue
+        - Angular
+        - React
+        - Next.js
+        - TypeScript
+        - Tailwind CSS
+        - Pinia
+    - title: Backend ve veri
+      icon: i-lucide-database
+      items:
+        - Node.js
+        - Express
+        - MongoDB
+        - Socket.IO
+        - Redis
+        - REST API
+        - JWT
+    - title: Mobil ve cloud
+      icon: i-lucide-smartphone
+      items:
+        - React Native
+        - Expo
+        - Docker
+        - AWS S3
+        - CloudFront
+        - Vercel
+    - title: Araçlar
+      icon: i-lucide-wrench
+      items:
+        - Git
+        - GitHub
+        - Jira
+        - Figma
+        - ESLint
+        - Nuxt Content

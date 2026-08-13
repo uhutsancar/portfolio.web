@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const { footer } = useAppConfig()
-const { home } = useAppConfig()
 </script>
 
 <template>
@@ -26,7 +25,6 @@ const { home } = useAppConfig()
         size="sm"
         class="p-1"
       />
- 
     </template>
   </UFooter>
 </template>

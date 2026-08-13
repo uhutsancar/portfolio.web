@@ -4,7 +4,7 @@ description: >-
   veri görselleştirme, tarih aralığı seçimi, tablo ve filtre bileşenleri
   üzerinde çalıştım. Bileşen sorumluluklarını ayrı tutmaya ve panelin farklı
   ekran boyutlarında bozulmadan çalışmasına odaklandım.
-image: /projects/projects-2.avif
+image: /images/projects-2.avif
 url: https://github.com/uhutsancar/dashboard_web.app
 tags:
   - Nuxt

@@ -55,6 +55,12 @@ export default defineNuxtConfig({
         },
       },
 
+      '/rss.xml': {
+        headers: {
+          'Cache-Control': 'public, max-age=3600',
+        },
+      },
+
       '/': {
         isr: 3600,
       },
@@ -68,6 +74,10 @@ export default defineNuxtConfig({
       },
 
       '/blog': {
+        isr: 3600,
+      },
+
+      '/blog/**': {
         isr: 3600,
       },
 

@@ -8,7 +8,7 @@ author:
     alt: Uhut Sancar
 date: 2026-06-12
 description: useAsyncData, Pinia ve payload mantığını bir arada kullanarak sunucuda çekilen verinin istemcide tekrar istenmesini nasıl engellediğimi anlatıyorum.
-image: /projects/projects-3.avif
+image: /images/projects-3.avif
 minRead: 5
 ---
 

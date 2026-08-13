@@ -5,7 +5,7 @@ description: >-
   pdfjs ile tarayıcıda PDF ayrıştırma, react-dropzone ile dosya yükleme ve
   Zustand ile state yönetimi kullandım. Yüklenme, hatalı dosya ve boş sonuç
   durumlarını arayüzde ayrı ayrı ele aldım.
-image: /projects/projects-1.avif
+image: /images/projects-1.avif
 url: https://github.com/uhutsancar/skillence.web
 tags:
   - React

@@ -5,7 +5,7 @@ description: >-
   sunucu tarafında Express ve Mongoose ile REST API geliştirdim. Clerk ile
   kimlik doğrulama, ImageKit ile medya yönetimi, Inngest ile arka plan işleri
   ve Nodemailer ile e-posta bildirimleri kullandım.
-image: /projects/projects-2.avif
+image: /images/projects-2.avif
 url: https://github.com/uhutsancar/motionmeet.app
 tags:
   - React

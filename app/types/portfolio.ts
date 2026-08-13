@@ -13,6 +13,11 @@ export interface PortfolioProfileImage {
   alt: string
 }
 
+export interface PortfolioSignature extends PortfolioProfileImage {
+  animatedLight: string
+  animatedDark: string
+}
+
 export interface PortfolioAction {
   label: string
   to: string
@@ -35,9 +40,9 @@ export interface PortfolioSocialLink {
 }
 
 export interface HomeHero {
+  headline: string
   title: string
   description: string
-  profile: PortfolioProfileImage
   primaryAction: PortfolioAction
   availability: PortfolioAvailability
   images: PortfolioImage[]
@@ -79,21 +84,16 @@ export interface HomeBlog {
   items: HomeArticle[]
 }
 
-export interface TestimonialAvatar {
-  src: string
-  srcset?: string
-  alt?: string
+export interface StackCategory {
+  title: string
+  icon: string
+  items: string[]
 }
 
-export interface TestimonialAuthor {
-  name: string
+export interface HomeStack {
+  title: string
   description: string
-  avatar: TestimonialAvatar
-}
-
-export interface HomeTestimonial {
-  quote: string
-  author: TestimonialAuthor
+  categories: StackCategory[]
 }
 
 export interface HomeFaqQuestion {
@@ -120,6 +120,8 @@ export interface ContactFormState {
 }
 
 export interface PortfolioAppConfig {
+  logo: PortfolioSignature
+
   navigation: NavigationMenuItem[]
 
   footer: {

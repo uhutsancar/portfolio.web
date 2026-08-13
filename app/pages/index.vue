@@ -12,8 +12,13 @@ if (!page.value) {
   })
 }
 
-const title = page.value.hero.title
-const description = page.value.hero.description
+const title
+  = page.value.seo?.title
+    ?? page.value.hero.title
+
+const description
+  = page.value.seo?.description
+    ?? page.value.hero.description
 
 useSeoMeta({
   title,
@@ -45,9 +50,7 @@ useSeoMeta({
 
     <HomeBlog :blog="page.blog" />
 
-    <HomeTestimonials
-      :testimonials="page.testimonials"
-    />
+    <HomeStack :stack="page.stack" />
 
     <HomeFaq :faq="page.faq" />
   </UPage>

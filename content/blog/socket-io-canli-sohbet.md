@@ -8,7 +8,7 @@ author:
     alt: Uhut Sancar
 date: 2026-03-10
 description: Tek satır kodla siteye gömülen bir canlı destek sistemini geliştirirken oda yönetimi, yeniden bağlanma ve mesaj sırası konusunda öğrendiklerim.
-image: /projects/projects-1.avif
+image: /images/projects-1.avif
 minRead: 6
 ---
 

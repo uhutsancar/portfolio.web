@@ -4,7 +4,7 @@ description: >-
   Servisler arası iletişimde event bus kullanımı, servis sınırlarının
   ayrılması ve modern backend pratikleri üzerine çalıştığım proje. Frontend
   dışındaki katmanları da uçtan uca anlamak için üzerinde durduğum bir alan.
-image: /projects/projects-4.avif
+image: /images/projects-4.avif
 url: https://github.com/uhutsancar/Velora
 tags:
   - .NET

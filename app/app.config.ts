@@ -3,6 +3,14 @@ import type {
 } from './types/portfolio'
 
 const portfolioConfig = {
+  logo: {
+    light: '/profile_black.png',
+    dark: '/profile_white.png',
+    animatedLight: '/profile_black_animated.gif',
+    animatedDark: '/profile_white_animated.gif',
+    alt: 'Uhut Sancar',
+  },
+
   navigation: [
     {
       label: 'Ana sayfa',
@@ -47,6 +55,12 @@ const portfolioConfig = {
         icon: 'i-lucide-mail',
         to: 'mailto:sancaruhut@gmail.com',
         ariaLabel: 'E-posta gönder',
+      },
+      {
+        icon: 'i-lucide-rss',
+        to: '/rss.xml',
+        ariaLabel: 'RSS akışı',
+        target: '_blank',
       },
     ],
   },

@@ -1,15 +1,50 @@
 <script setup lang="ts">
-const { navigation } = useAppConfig()
+const { navigation, logo } = useAppConfig()
+
+const signing = ref(false)
+
+const mark = computed(() => {
+  return signing.value
+    ? {
+        light: logo.animatedLight,
+        dark: logo.animatedDark,
+      }
+    : logo
+})
 </script>
 
 <template>
   <header
     class="
       fixed inset-x-0 top-2 z-50
-      flex justify-center px-2
+      flex items-center justify-center px-2
       sm:top-4
     "
   >
+    <ULink
+      to="/"
+      :aria-label="logo.alt"
+      class="absolute left-3 sm:left-6"
+      @mouseenter="signing = true"
+      @mouseleave="signing = false"
+    >
+      <img
+        :src="mark.light"
+        :alt="logo.alt"
+        width="128"
+        height="128"
+        class="size-9 dark:hidden"
+      >
+
+      <img
+        :src="mark.dark"
+        :alt="logo.alt"
+        width="128"
+        height="128"
+        class="hidden size-9 dark:block"
+      >
+    </ULink>
+
     <UNavigationMenu
       :items="navigation"
       aria-label="Main navigation"

@@ -3,29 +3,18 @@
 
 @source "../../../content/**/*";
 
-@theme static {
-  --font-sans: 'Public Sans', sans-serif;
-  --font-serif: 'Instrument Serif', serif;
+@theme {
+  --font-sans: 'Outfit', sans-serif;
 }
 
-@layer base {
-  @font-face {
-    font-family: 'Public Sans';
-    font-display: swap;
-  }
 
-  @font-face {
-    font-family: 'Instrument Serif';
-    font-display: swap;
-  }
-}
 
 :root {
   --ui-container: var(--container-4xl);
 
   ::selection {
     color: #282a30;
-    background-color: #c8c8c8;
+    background-color: #050101;
   }
 }
 

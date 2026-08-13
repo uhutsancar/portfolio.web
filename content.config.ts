@@ -117,26 +117,20 @@ const articleSchema = z.object({
   to: z.string(),
 })
 
-const testimonialSchema = z.object({
-  quote: z.string().editor({
-    input: 'textarea',
-    label: 'Quote',
+const stackCategorySchema = z.object({
+  title: z.string().editor({
+    label: 'Category',
   }),
 
-  author: z.object({
-    name: z.string(),
+  icon: z.string().editor({
+    input: 'icon',
+    label: 'Icon',
+  }),
 
-    description: z.string(),
-
-    avatar: z.object({
-      src: z.string().editor({
-        input: 'media',
-      }),
-
-      srcset: z.string().optional(),
-
-      alt: z.string().optional(),
-    }),
+  items: z.array(
+    z.string(),
+  ).editor({
+    label: 'Technologies',
   }),
 })
 
@@ -174,11 +168,11 @@ export default defineContentConfig({
 
       schema: z.object({
         hero: z.object({
+          headline: z.string(),
+
           title: z.string(),
 
           description: z.string(),
-
-          profile: profileImageSchema,
 
           primaryAction: buttonSchema,
 
@@ -229,9 +223,15 @@ export default defineContentConfig({
           ),
         }),
 
-        testimonials: z.array(
-          testimonialSchema,
-        ),
+        stack: z.object({
+          title: z.string(),
+
+          description: z.string(),
+
+          categories: z.array(
+            stackCategorySchema,
+          ),
+        }),
 
         faq: z.object({
           title: z.string(),
@@ -316,39 +316,6 @@ export default defineContentConfig({
           }),
 
         author: blogAuthorSchema,
-      }),
-    }),
-
-    speaking: defineCollection({
-      type: 'page',
-
-      source: 'speaking.yml',
-
-      schema: z.object({
-        links: z.array(
-          buttonSchema,
-        ),
-
-        events: z.array(
-          z.object({
-            category: z.enum([
-              'Conference',
-              'Live talk',
-              'Podcast',
-            ]),
-
-            title: z.string()
-              .nonempty(),
-
-            date: z.date(),
-
-            location: z.string()
-              .nonempty(),
-
-            url: z.string()
-              .optional(),
-          }),
-        ),
       }),
     }),
 

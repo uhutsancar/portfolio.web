@@ -119,14 +119,18 @@ useSeoMeta({
             </ULink>
           </template>
 
-          <img
+          <NuxtImg
             :src="project.image"
             :alt="project.title"
+            width="440"
+            height="192"
+            loading="lazy"
+            decoding="async"
             class="
               h-48 w-full
               rounded-lg object-cover
             "
-          >
+          />
         </UPageCard>
       </Motion>
     </UPageSection>
