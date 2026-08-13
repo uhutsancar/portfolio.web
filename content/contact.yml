@@ -1,21 +1,9 @@
-title: Let's work together
-
-description: >-
-  Have a project in mind, an event to fill, or just want to say hello?
-  Send me a message and I'll get back to you.
-
-seo:
-  title: Contact
-
-  description: >-
-    Get in touch about UX design, front-end development,
-    speaking engagements, or collaboration opportunities.
-
+title: Birlikte çalışalım
+description: Bir pozisyon, proje veya iş birliği için aklınızda bir şey varsa mesaj bırakın; en kısa sürede dönüş yapıyorum
 form:
-  submitLabel: Send message
-
-  successMessage: >-
-    Thanks for reaching out — I'll get back to you soon.
-
-  errorMessage: >-
-    Something went wrong. Please try again later.
+  submitLabel: Mesaj Gönder
+  successMessage: Mesajınız ulaştı, teşekkürler. En kısa sürede size dönüş yapacağım.
+  errorMessage: Mesaj gönderilemedi. Lütfen daha sonra tekrar deneyin veya sancaruhut@gmail.com adresine yazın.
+seo:
+  title: İletişim
+  description: Uhut Sancar ile frontend geliştirme, full-stack projeler ve iş birliği fırsatları için iletişime geçin.

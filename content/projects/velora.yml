@@ -1,0 +1,14 @@
+title: Velora — dağıtık e-ticaret altyapısı
+description: >-
+  .NET ile geliştirilen, mikroservis mimarisine dayalı e-ticaret çözümü.
+  Servisler arası iletişimde event bus kullanımı, servis sınırlarının
+  ayrılması ve modern backend pratikleri üzerine çalıştığım proje. Frontend
+  dışındaki katmanları da uçtan uca anlamak için üzerinde durduğum bir alan.
+image: /projects/projects-4.avif
+url: https://github.com/uhutsancar/Velora
+tags:
+  - .NET
+  - C#
+  - Mikroservis
+  - Event Bus
+date: 2026-07-03

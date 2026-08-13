@@ -1,0 +1,12 @@
+title: Support.io — SaaS canlı destek sistemi
+date: 2026-03-14
+description: "Bir web sitesine tek satır script ile eklenen, Intercom benzeri canlı destek sistemi. Monorepo yapısında geliştirdim: Express + Socket.IO backend, React yönetici paneli ve gömülebilir widget. Gerçek zamanlı mesajlaşma, anahtar kelime eşleştiren SSS botu, tek panelden çoklu site yönetimi, ziyaretçi takibi ve sayfa bazlı destek içeriyor. JWT kimlik doğrulama, Docker ve Caddy ile deployment yapılandırması mevcut."
+image: /projects/projects-1.avif
+tags:
+  - Front-End Development
+  - React
+  - Node.js
+  - MongoDb
+  - Socket.IO
+  - Docker
+url: https://github.com/uhutsancar/support.io

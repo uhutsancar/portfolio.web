@@ -1,0 +1,17 @@
+title: MotionMeet — sporcuları buluşturan sosyal platform
+description: >-
+  Sporcuların birbirini bulup etkinlik paylaşabildiği full-stack sosyal medya
+  uygulaması. İstemci tarafında React ve Redux Toolkit ile state yönetimi,
+  sunucu tarafında Express ve Mongoose ile REST API geliştirdim. Clerk ile
+  kimlik doğrulama, ImageKit ile medya yönetimi, Inngest ile arka plan işleri
+  ve Nodemailer ile e-posta bildirimleri kullandım.
+image: /projects/projects-2.avif
+url: https://github.com/uhutsancar/motionmeet.app
+tags:
+  - React
+  - Redux Toolkit
+  - Node.js
+  - Express
+  - MongoDB
+  - Tailwind CSS
+date: 2025-12-15

@@ -1,90 +1,91 @@
 about:
-  title: About Me
-  description: As a UX/UI designer and front-end developer with 6 years of experience, I leverage my Boston University Interactive Design degree to craft user-centered digital experiences. My approach blends creative strategy with technical expertise, transforming concepts into functional, purposeful digital products that seamlessly integrate design and technology.
+  title: Hakkımda
+  description: Kütahya Dumlupınar Üniversitesi Bilgisayar Mühendisliği mezunuyum. 2023'ten bu yana profesyonel olarak frontend geliştiriyorum; Diam&Tech'te iki yıl Angular ve React ile müşteri odaklı web uygulamaları geliştirdim, trex'te Nuxt ve Vue ile landing page ve dashboard projelerinde çalıştım. Bir ürünü yalnızca arayüzden ibaret görmediğim için backend, veri modelleme, mobil ve cloud tarafında da çalışıyorum.
 blog:
-  title: Latest Articles
-  description: Some of my recent thoughts
+  title: Son yazılar
+  description: Geliştirirken öğrendiklerimi not ediyorum
   items:
-    - date: Apr 23, 2025
-      title: "From Mockup to Market: My End-to-End Product Design Process"
-      description: A detailed breakdown of my iterative design methodology, from initial research to final handoff, with practical tips for designers at every stage.
-      to: /blog/from-mockup-to-market
-    - date: Mar 15, 2025
-      title: The Psychology of Color in UI Design
-      description: Exploring how strategic color choices can influence user behavior, evoke emotions, and enhance the overall user experience of digital products.
-      to: /blog/psychology-of-color-in-ui-design
-    - date: Mar 5, 2025
-      title: How I Built My Design System from Scratch
-      description: A practical guide to creating your own design system, from initial audit to implementation, and the lessons learned along the way.
-      to: /blog/how-i-built-my-own-design-system-from-scratch
+    - date: 12 Haz 2026
+      title: Nuxt'ta SSR sırasında aynı veriyi iki kez çekmemek
+      description: useAsyncData, Pinia ve payload mantığını bir arada kullanarak sunucuda çekilen verinin istemcide tekrar istenmesini nasıl engellediğimi anlatıyorum.
+      to: /blog/nuxt-ssr-veri-cekme
+    - date: 28 Nis 2026
+      title: MongoDB'de embed mi reference mı?
+      description: Veri modelini uygulamanın sorgu şekline göre kurmak, embed ve reference arasındaki seçim ve bu kararın pagination ile index performansına etkisi.
+      to: /blog/mongodb-embed-reference
+    - date: 10 Mar 2026
+      title: Support.io'da Socket.IO ile canlı sohbet altyapısı
+      description: "\tTek satır kodla siteye gömülen bir canlı destek sistemini geliştirirken oda yönetimi, yeniden bağlanma ve mesaj sırası konusunda öğrendiklerim."
+      to: /blog/socket-io-canli-sohbet
 experience:
-  title: Work Experience
+  title: Deneyim
   items:
-    - position: Brand Designer at
-      date: 2023 - Present
+    - position: Software Development Intern
+      date: "2026"
       company:
-        name: Nuxt
-        logo: i-simple-icons-nuxtdotjs
-        url: https://nuxt.com
-        color: "#00DC82"
-    - position: Assets Designer at
-      date: 2022 - 2023
+        name: trex
+        logo: i-lucide-briefcase-business
+        url: https://trex.com.tr/tr/
+        color: "#0EA5E9"
+    - position: Front-End Developer
+      date: 2023-2025
       company:
-        name: Raycast
-        logo: i-simple-icons-raycast
-        url: https://raycast.com
-        color: "#FF6363"
-    - position: Senior UX/UI Designer at
-      date: 2020 - 2021
+        name: Diam&Tech
+        logo: i-lucide-code-xml
+        url: https://www.linkedin.com/company/diamntech/home/
+        color: "#2563EB"
+    - position: Full-Stack Developer
+      date: Devam ediyor
       company:
-        name: Linear
-        logo: i-simple-icons-linear
-        url: https://linear.app
-        color: "#5E6AD2"
+        name: Kişisel projeler
+        logo: i-lucide-layers-3
+        url: https://github.com/uhutsancar
+        color: "#22C55E"
 faq:
-  title: Frequently Asked Questions
-  description: Answers to common questions about my process and services.
+  title: Sık sorulan sorular
+  description: Çalışma şeklim ve kullandığım teknolojiler hakkında.
   categories:
-    - title: Services and Process
+    - title: Çalışma şeklim
       questions:
-        - label: What services do you offer?
-          content: I specialize in UX/UI design and front-end development. This includes user research, wireframing, interactive prototyping, creating intuitive user interfaces, building responsive websites and web applications, and developing design systems. My goal is to create seamless digital experiences from concept to deployment.
-        - label: What is your design process like?
-          content: My process is collaborative and iterative, typically involving Discovery and Research, Ideation and Prototyping, User Testing, Visual Design, and close collaboration with development teams during implementation. I tailor the process based on project needs while keeping the solution user-centered.
-        - label: Do you work with startups?
-          content: Absolutely. I enjoy working with startups to help shape their product vision and create user-friendly interfaces from the ground up. I adapt my process to fit fast-moving startup environments.
-    - title: Pricing & Timelines
+        - label: Bir özelliği geliştirmeye nasıl başlıyorsun?
+          content: Önce kullanıcı ihtiyacını ve veri akışını anlamaya çalışıyorum. Frontend, backend ve veritabanı arasındaki bağlantıyı birlikte değerlendiriyorum. Yalnızca başarılı senaryoyu değil; yüklenme, boş veri, bağlantı hatası, yetki problemi ve beklenmeyen API cevabı gibi durumları da baştan planlıyorum.
+        - label: Mevcut bir projeye dahil olurken nasıl ilerliyorsun?
+          content: Projenin mevcut mimarisini ve takım standartlarını anlamadan yeni yapı kurmuyorum. Gereksiz component, composable veya klasör eklemek yerine var olan yapıyı koruyarak geliştirmeyi tercih ediyorum. Kullanılmayan dosya ve bağımlılıkları projede bırakmıyorum.
+        - label: Kod kalitesi için nelere dikkat ediyorsun?
+          content: Component sorumluluklarının net olması, TypeScript tiplerinin doğru tanımlanması, tekrar eden kodun azaltılması, gereksiz render işlemlerinin önlenmesi ve kodun okunabilir kalması. Güvenlik ve performansı sonradan eklenen bir adım değil, geliştirme sürecinin parçası olarak görüyorum.
+    - title: Teknolojiler
       questions:
-        - label: How much does a project typically cost?
-          content: Project costs vary based on scope, complexity, features, and timeline. Comprehensive UX/UI design and front-end development engagements typically start around $5,000, with average projects ranging between $8,000 and $25,000.
-        - label: What are your payment terms?
-          content: I generally require a 40% deposit to schedule the project and begin work, with the remaining 60% due upon successful project completion and delivery.
-        - label: How long does a typical project take?
-          content: Timelines depend on the project scope and complexity. Smaller projects might take three to four weeks, while larger projects can range from two to four months.
-        - label: Do you offer retainers or ongoing support?
-          content: Yes. For clients needing ongoing design support, feature development, or maintenance, I offer monthly retainer options tailored to their needs.
-    - title: About Me
+        - label: Hangi teknolojilerle çalışıyorsun?
+          content: Frontend'de Nuxt, Vue, Angular, React ve Next.js; state için Pinia, Redux Toolkit ve RxJS. Backend'de Node.js, Express ve MongoDB; gerçek zamanlı özelliklerde Socket.IO. Mobilde React Native ve Expo. Ayrıca TypeScript, Tailwind CSS, Docker, AWS (S3, CloudFront), Redis ve Jira kullanıyorum.
+        - label: SSR ve performans tarafında neler yapıyorsun?
+          content: SSR ve hydration, lazy loading, route bazlı kod bölme, veri önbellekleme, SEO meta yönetimi ve gereksiz istekleri engelleyen veri akışları üzerinde çalışıyorum. Responsive yapıyı sadece tarayıcıda değil gerçek cihazlarda da kontrol ediyorum.
+        - label: Erişilebilirlik senin için ne ifade ediyor?
+          content: Arayüzün klavyeyle kullanılabilmesi, doğru semantik etiketler, yeterli kontrast, odak durumlarının görünür olması ve ekran okuyucular için anlamlı metinler. Erişilebilirliği tasarımın sonuna eklenen bir kontrol listesi değil, geliştirmenin bir parçası olarak ele alıyorum.
+    - title: Hakkımda
       questions:
-        - label: What do you enjoy most about your work?
-          content: I love solving complex problems through design and technology. It is rewarding to see people interact with something I created and find it genuinely useful and easy to navigate.
-        - label: What are your hobbies outside of work?
-          content: When I am not designing or coding, I enjoy exploring Boston, visiting coffee shops, hiking, photography, and occasionally contributing to open-source projects.
+        - label: Eğitim geçmişin nedir?
+          content: Kütahya Dumlupınar Üniversitesi Mühendislik Fakültesi Bilgisayar Mühendisliği lisans programından 3.41/4 ortalama ile mezun oldum. Lisans eğitimimden önce İngilizce hazırlık programını tamamladım. İngilizce seviyem B2.
+        - label: Kariyer hedefin ne?
+          content: Frontend'deki profesyonel deneyimimi backend, mobil ve cloud teknolojileriyle birleştirerek uçtan uca ürün geliştirebilen bir yazılım geliştirici olarak ilerlemek. Uzun vadede yüksek kullanıcı sayılarına hizmet veren, ölçeklenebilir ürünlerde çalışmak istiyorum.
+        - label: Şu anda yeni bir pozisyona açık mısın?
+          content: Evet. Frontend ağırlıklı veya full-stack pozisyonlar için iletişime geçebilirsiniz. En hızlı şekilde iletişim sayfasındaki formdan veya sancaruhut@gmail.com adresinden ulaşabilirsiniz.
 hero:
-  title: Hey, I'm Emma Thompson UX/UI Designer
-  description: I craft intuitive digital experiences where design meets functionality. Based in Boston, bringing ideas to life through code and creativity.
+  title: "\tMerhaba, ben Uhut Sancar - Frontend Developer"
+  description: Kullanıcı odaklı, performanslı ve erişilebilir web ve mobil ürünler geliştiriyorum. Bursa'da yaşıyorum; Nuxt, Vue, Angular ve React ekosistemlerinde çalışıyor, backend tarafında Node.js ve MongoDB kullanıyorum.
   profile:
-    light: https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=400&auto=format&fit=crop
-    dark: https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=400&auto=format&fit=crop
-    alt: Emma Thompson profile picture
+    light: /profile_white.png
+    dark: /profile_black.png
+    alt: Uhut Sancar profile picture
   primaryAction:
-    label: Use this template
-    to: https://github.com/nuxt-ui-templates/portfolio
-    target: _blank
+    label: Projelerime göz at
+    to: /projects
+    target: _self
+    icon: i-lucide-arrow-right
   availability:
     enabled: true
-    availableLabel: Available for new projects
-    unavailableLabel: Not available at the moment
-    to: https://cal.com/
+    availableLabel: Yeni fırsatlara açığım
+    unavailableLabel: Şu anda yeni bir pozisyon aramıyorum
+    to: /contact
   images:
     - src: /hero/random-1.avif
       alt: Random Image 1

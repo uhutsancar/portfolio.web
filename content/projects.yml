@@ -1,26 +1,18 @@
-title: Designing Interfaces, Building Experiences.
-
-description: >-
-  I've worked on a variety of projects, focusing on creating
-  intuitive digital experiences where thoughtful design meets
-  clean code. Here are some highlights I'm proud of, showcasing
-  my process from concept to execution.
-
-seo:
-  title: Projects
-  description: >-
-    Selected UX/UI design and front-end development projects
-    showcasing work from concept to execution.
-
+title: Geliştirdiğim projeler
+description: Web, mobil ve backend teknolojilerini birlikte kullandığım projeler. Her birinde arayüzün yanında veri modeli, API tasarımı ve performans tarafına da katkı verdim
 links:
-  - label: Let's talk
-    to: https://cal.com/
+  - label: Benimle iletişime geç
+    to: /contact
     target: _blank
     color: neutral
     variant: solid
-
-  - label: Email me
-    to: /contact
+  - label: GitHub profilim
+    to: https://github.com/uhutsancar
     color: info
     variant: solid
-    
+    target: _blank
+seo:
+  title: Projeler
+  description: Uhut Sancar'ın geliştirdiği web, mobil ve full-stack projeler.
+navigation:
+  title: ""

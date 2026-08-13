@@ -1,0 +1,15 @@
+title: Monetao — harcama takip uygulaması
+description: >-
+  Gelir ve giderleri kategori bazlı takip eden, Recharts ile grafik desteği
+  sunan React uygulaması. Axios ile API iletişimi, react-router-dom ile
+  yönlendirme, react-hot-toast ile bildirim akışı kullandım. Formlarda
+  doğrulama ve hata durumlarının kullanıcıya net gösterilmesi üzerinde
+  çalıştım.
+image: /projects/projects-3.avif
+url: https://github.com/uhutsancar/monetao.web
+tags:
+  - React
+  - Recharts
+  - Axios
+  - Tailwind CSS
+date: 2025-08-08

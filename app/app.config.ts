@@ -5,11 +5,11 @@ import type {
 const portfolioConfig = {
   navigation: [
     {
-      label: 'Home',
+      label: 'Ana sayfa',
       to: '/',
     },
     {
-      label: 'Projects',
+      label: 'Projeler',
       to: '/projects',
     },
     {
@@ -17,41 +17,36 @@ const portfolioConfig = {
       to: '/blog',
     },
     {
-      label: 'Speaking',
-      to: '/speaking',
-    },
-    {
-      label: 'About',
+      label: 'Hakkımda',
       to: '/about',
     },
     {
-      label: 'Contact',
+      label: 'İletişim',
       to: '/contact',
     },
   ],
 
   footer: {
     credits:
-      `Built with Nuxt UI • © ${new Date().getFullYear()}`,
+      `© ${new Date().getFullYear()} Uhut Sancar`,
 
     links: [
       {
-        icon: 'i-simple-icons-discord',
-        to: 'https://go.nuxt.com/discord',
-        ariaLabel: 'Nuxt on Discord',
-        target: '_blank',
-      },
-      {
-        icon: 'i-simple-icons-x',
-        to: 'https://go.nuxt.com/x',
-        ariaLabel: 'Nuxt on X',
-        target: '_blank',
-      },
-      {
         icon: 'i-simple-icons-github',
-        to: 'https://github.com/nuxt/ui',
-        ariaLabel: 'Nuxt UI on GitHub',
+        to: 'https://github.com/uhutsancar',
+        ariaLabel: 'GitHub profilim',
         target: '_blank',
+      },
+      {
+        icon: 'i-simple-icons-linkedin',
+        to: 'https://www.linkedin.com/in/uhut-sancar',
+        ariaLabel: 'LinkedIn profilim',
+        target: '_blank',
+      },
+      {
+        icon: 'i-lucide-mail',
+        to: 'mailto:sancaruhut@gmail.com',
+        ariaLabel: 'E-posta gönder',
       },
     ],
   },

@@ -1,0 +1,16 @@
+title: Skillence — yapay zeka destekli CV analizi
+description: >-
+  Yüklenen CV'yi seçilen iş ilanıyla karşılaştırıp yapay zeka desteğiyle geri
+  bildirim veren uygulama. React Router 7 ile dosya tabanlı yönlendirme,
+  pdfjs ile tarayıcıda PDF ayrıştırma, react-dropzone ile dosya yükleme ve
+  Zustand ile state yönetimi kullandım. Yüklenme, hatalı dosya ve boş sonuç
+  durumlarını arayüzde ayrı ayrı ele aldım.
+image: /projects/projects-1.avif
+url: https://github.com/uhutsancar/skillence.web
+tags:
+  - React
+  - React Router
+  - Zustand
+  - Tailwind CSS
+  - AI
+date: 2025-09-04

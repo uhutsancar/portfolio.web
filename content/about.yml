@@ -1,59 +1,70 @@
-title: About Me
+title: Hakkımda
 
 description: >-
-  Learn more about my journey as a Boston-based UX/UI Designer
-  and Front-End Developer, my design philosophy, and my passion
-  for crafting intuitive digital experiences.
+  Bursa'da yaşayan bir Frontend Developer olarak yolculuğum, geliştirme
+  yaklaşımım ve üzerinde çalıştığım teknolojiler.
 
 seo:
-  title: About Me
+  title: Hakkımda
 
   description: >-
-    Learn more about Emma Thompson, a Boston-based UX/UI
-    Designer and Front-End Developer focused on creating
-    intuitive and engaging digital experiences.
+    Uhut Sancar — Bilgisayar Mühendisliği mezunu, Nuxt, Vue, Angular ve React
+    ile çalışan; backend, mobil ve cloud tarafında da geliştirme yapan
+    Frontend Developer.
 
 profile:
-  light: "https://images.unsplash.com/photo-1701615004837-40d8573b6652?auto=format&fit=crop&ixlib=rb-4.0.3&q=80&w=1480"
+  light: /profile.jpg
 
-  dark: "https://images.unsplash.com/photo-1701615004837-40d8573b6652?auto=format&fit=crop&ixlib=rb-4.0.3&q=80&w=1480"
+  dark: /profile.jpg
 
-  alt: Emma Thompson profile picture
+  alt: Uhut Sancar profil fotoğrafı
 
 content: |
-  Hi, I'm Emma Thompson, a UX/UI Designer and Front-End Developer based right here in Boston. For the past six years, I've been immersed in the world of digital product creation, focusing on building experiences that are not just functional, but genuinely intuitive and engaging for users.
+  Merhaba, ben Uhut Sancar. Bursa'da yaşıyorum ve 2023'ten bu yana profesyonel olarak web uygulamaları geliştiriyorum.
 
-  My path started at Boston University, where I earned a degree in Interactive Design. It was there I discovered my dual passion for the visual language of design and the logical puzzle of code.
+  Kütahya Dumlupınar Üniversitesi Bilgisayar Mühendisliği bölümünden 3.38/4 ortalamayla mezun oldum. Lisans eğitimimden önce İngilizce hazırlık programını tamamladım.
 
-  Since then, I've honed my skills in both areas, believing that the best digital products are born from a deep understanding of both aesthetics and implementation.
+  Yazılım geliştirmede özellikle frontend tarafına yoğunlaşıyorum. Bununla birlikte bir ürünü yalnızca kullanıcı arayüzünden ibaret görmediğim için backend geliştirme, veri modelleme, mobil uygulama geliştirme ve cloud servisleri üzerinde de çalışıyorum.
 
-  ### My Design Philosophy
+  ### Profesyonel deneyimim
 
-  My design philosophy is rooted in empathy and problem-solving. I believe great design starts with understanding the **why** — the user's needs, motivations, and pain points.
+  Diam&Tech bünyesinde iki yıl boyunca part-time Front-End Developer olarak çalıştım. Bu süreçte Angular ve React kullanarak müşteri odaklı web uygulamaları geliştirdim; component mimarisi, RESTful API entegrasyonları, responsive tasarım, erişilebilirlik, SSR, SEO ve performans iyileştirmeleri üzerinde çalıştım.
 
-  I use research, iterative prototyping, often with tools like Figma, and user testing to ensure the solutions I build are truly effective.
+  Farklı zaman dilimlerindeki uluslararası ekiplerle iş birliği yaptım, code review süreçlerine katıldım ve projelerde alınan teknik kararlara katkı sağladım.
 
-  I strive to create interfaces that feel effortless, where functionality and beauty work hand-in-hand.
+  trex'te ise full-time stajyer olarak Nuxt, Nuxt UI, Vue, TypeScript ve Pinia kullanarak landing page ve dashboard uygulamaları geliştirdim.
 
-  Whether I'm crafting pixel-perfect user interfaces or writing clean Vue.js and Nuxt.js code, my focus is always on creating value for the end user.
+  Bu deneyimler bana yalnızca kod yazmayı değil; mevcut bir proje yapısını anlamayı, takım standartlarına uyum sağlamayı ve sürdürülebilir çözümler üretmeyi öğretti.
 
-  ### What Drives Me
+  ### Frontend yaklaşımım
 
-  What keeps me excited about this work is the constant learning and the challenge of translating complex ideas into simple, elegant solutions.
+  Bir sayfanın masaüstünde doğru görünmesini yeterli bulmuyorum. Arayüzün farklı ekran boyutlarında bozulmaması, mobil cihazlarda klavye ve modal davranışlarının doğru çalışması, yüklenme ve hata durumlarının kullanıcıya düzgün gösterilmesi benim için en az görsel sonuç kadar önemli.
 
-  There's nothing more rewarding than seeing a design come to life and knowing it's making someone's digital interaction easier or more enjoyable.
+  Component geliştirirken sorumlulukların net olmasına, TypeScript tiplerinin doğru tanımlanmasına, tekrar eden kodun azaltılmasına ve gereksiz render işlemlerinin önlenmesine dikkat ediyorum.
 
-  ### Beyond the Screen
+  Nuxt ve Vue tarafında TypeScript tabanlı, SSR destekli uygulamalar geliştiriyorum. Nuxt UI ile tutarlı ve erişilebilir arayüzler kuruyor, içerik yönetimi gereken projelerde Nuxt Content ile Markdown ve YAML tabanlı yapılar tercih ediyorum. Pinia ile state'i yönetirken SSR sırasında verinin gereksiz yere tekrar çekilmesini önleyecek yapılar kuruyorum.
 
-  When I'm not designing or coding, you might find me exploring Boston's latest coffee shops, hiking nearby trails, or occasionally contributing to open-source projects.
+  Angular tarafında SSR, hydration, RxJS, resolver, guard, interceptor, reactive form, lazy loading ve uluslararasılaştırma; React tarafında Redux Toolkit, React Router, Axios interceptor, form doğrulama ve lazy route yapıları üzerinde çalıştım.
 
-  Thanks for stopping by. Feel free to browse my [projects](/projects) or [get in touch](/contact) if you'd like to collaborate.
+  ### Backend ve mobil
+
+  Backend tarafında Node.js, Express ve MongoDB kullanıyorum. REST API geliştirme, JWT tabanlı kimlik doğrulama, şifre güvenliği, rol ve yetkilendirme sistemleri, pagination, arama, filtreleme ve medya yönetimi üzerinde çalışıyorum.
+
+  MongoDB veri modellerini uygulamanın sorgulama şekline göre kuruyorum; embed ve reference yaklaşımları arasında ihtiyaca göre seçim yapıyor, index ve sorgu performansını göz önünde bulunduruyorum. Gerçek zamanlı iletişim gereken yerlerde Socket.IO kullanıyor, medya dosyalarını Amazon S3'te saklayıp CloudFront üzerinden sunuyorum.
+
+  Mobil tarafta React Native ve Expo ile uygulamalar geliştiriyorum. Navigasyon, global state yönetimi, API iletişimi, safe area kullanımı ve klavye davranışları gibi konulara önem veriyorum; bir tasarımın yalnızca tek bir cihazda çalışmasını yeterli görmüyorum.
+
+  ### Hedefim
+
+  Frontend alanındaki deneyimimi backend, mobil ve cloud teknolojileriyle birleştirerek uçtan uca ürün geliştirebilen bir yazılım geliştirici olarak ilerlemek istiyorum. Verilen tasarımı kodlayan değil; ürünün mimarisine, performansına ve kullanıcı deneyimine katkı sağlayan bir geliştirici olmayı hedefliyorum.
+
+  [Projelerime](/projects) göz atabilir, birlikte çalışmak için [iletişime geçebilirsiniz](/contact).
 
 images:
-  - src: "https://images.unsplash.com/photo-1744877478622-a78c7a3336f6?auto=format&fit=crop&ixlib=rb-4.0.3&q=80&w=1587"
+  - src: /hero/random-1.avif
 
-    alt: My coffee workspace
+    alt: Çalışma masam
 
-  - src: "https://images.unsplash.com/photo-1744429523595-2c06b8611242?auto=format&fit=crop&ixlib=rb-4.0.3&q=80&w=1587"
+  - src: /hero/random-3.avif
 
-    alt: My trip to Tokyo
+    alt: Üzerinde çalıştığım projelerden bir ekran

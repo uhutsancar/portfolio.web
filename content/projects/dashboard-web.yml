@@ -1,0 +1,15 @@
+title: Dashboard uygulaması — Nuxt & ECharts
+description: >-
+  Nuxt, Nuxt UI ve Pinia ile geliştirdiğim yönetim paneli arayüzü. ECharts ile
+  veri görselleştirme, tarih aralığı seçimi, tablo ve filtre bileşenleri
+  üzerinde çalıştım. Bileşen sorumluluklarını ayrı tutmaya ve panelin farklı
+  ekran boyutlarında bozulmadan çalışmasına odaklandım.
+image: /projects/projects-2.avif
+url: https://github.com/uhutsancar/dashboard_web.app
+tags:
+  - Nuxt
+  - Vue
+  - Pinia
+  - Nuxt UI
+  - ECharts
+date: 2026-07-20
