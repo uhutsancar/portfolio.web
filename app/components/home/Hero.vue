@@ -137,10 +137,10 @@ function reveal(delay = 0) {
       class="flex justify-center lg:justify-end"
     >
       <ClientOnly>
-        <SignatureParticles class="aspect-square w-full max-w-sm" />
+        <SignatureParticles class="aspect-square w-full max-w-56 sm:max-w-sm" />
 
         <template #fallback>
-          <div class="aspect-square w-full max-w-sm" />
+          <div class="aspect-square w-full max-w-56 sm:max-w-sm" />
         </template>
       </ClientOnly>
     </Motion>

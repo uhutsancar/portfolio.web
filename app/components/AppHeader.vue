@@ -24,7 +24,7 @@ const mark = computed(() => {
     <ULink
       to="/"
       :aria-label="logo.alt"
-      class="absolute left-3 sm:left-6"
+      class="absolute left-2 sm:left-6"
       @mouseenter="signing = true"
       @mouseleave="signing = false"
     >
@@ -33,7 +33,7 @@ const mark = computed(() => {
         :alt="logo.alt"
         width="128"
         height="128"
-        class="size-9 dark:hidden"
+        class="size-7 dark:hidden sm:size-9"
       >
 
       <img
@@ -41,7 +41,7 @@ const mark = computed(() => {
         :alt="logo.alt"
         width="128"
         height="128"
-        class="hidden size-9 dark:block"
+        class="hidden size-7 dark:block sm:size-9"
       >
     </ULink>
 
@@ -53,7 +53,7 @@ const mark = computed(() => {
       class="
         max-w-full rounded-full
         border border-default/70
-        bg-muted/80 px-4
+        bg-muted/80 px-2
         shadow-lg shadow-neutral-950/5
         backdrop-blur-md
         sm:px-4

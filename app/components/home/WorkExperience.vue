@@ -34,7 +34,7 @@ defineProps<{
           :in-view-options="{
             once: true,
           }"
-          class="flex items-center gap-2 text-nowrap text-muted"
+          class="flex flex-wrap items-center gap-x-2 text-nowrap text-muted"
         >
           <time class="text-sm">
             {{ item.date }}

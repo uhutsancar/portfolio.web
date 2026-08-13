@@ -14,6 +14,7 @@ const colorMode = useColorMode()
 const pointer = { x: -1e5, y: -1e5 }
 
 let frame = 0
+let pressed = false
 let draw: (() => void) | null = null
 
 function wake() {
@@ -22,10 +23,11 @@ function wake() {
   }
 }
 
-function onPointerMove(event: PointerEvent) {
-  // Mouse only: on touch the pointer travels with the scroll, which would
-  // drag the mark around while the visitor is just scrolling past it.
-  if (event.pointerType !== 'mouse') {
+function track(event: PointerEvent) {
+  // A finger only moves the mark while it is held down, so scrolling past the
+  // hero does not drag it around. Nothing here cancels the gesture, so the
+  // page still scrolls normally.
+  if (event.pointerType !== 'mouse' && !pressed) {
     return
   }
 
@@ -40,7 +42,13 @@ function onPointerMove(event: PointerEvent) {
   wake()
 }
 
-function onPointerLeave() {
+function press(event: PointerEvent) {
+  pressed = true
+  track(event)
+}
+
+function release() {
+  pressed = false
   pointer.x = -1e5
   pointer.y = -1e5
   wake()
@@ -217,7 +225,10 @@ onMounted(() => {
     ref="canvas"
     aria-hidden="true"
     class="block"
-    @pointermove="onPointerMove"
-    @pointerleave="onPointerLeave"
+    @pointermove="track"
+    @pointerdown="press"
+    @pointerup="release"
+    @pointercancel="release"
+    @pointerleave="release"
   />
 </template>
