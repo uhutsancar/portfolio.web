@@ -1,14 +1,21 @@
 title: Velora — dağıtık e-ticaret altyapısı
 description: >-
-  .NET ile geliştirilen, mikroservis mimarisine dayalı e-ticaret çözümü.
-  Servisler arası iletişimde event bus kullanımı, servis sınırlarının
-  ayrılması ve modern backend pratikleri üzerine çalıştığım proje. Frontend
-  dışındaki katmanları da uçtan uca anlamak için üzerinde durduğum bir alan.
-image: /images/projects-4.avif
+  .NET 8 ile geliştirdiğim, mikroservis mimarisine dayalı e-ticaret altyapısı.
+  Identity, Catalog, Basket, Order, Payment ve Notification servisleri kendi
+  veritabanlarıyla ayrı ayrı çalışıyor; istemciler Ocelot tabanlı API
+  Gateway üzerinden tek adrese gidiyor. Servisler arası iletişimi
+  BuildingBlocks altında yazdığım event bus katmanıyla kurdum: sözleşmeler
+  soyut tutuluyor, RabbitMQ ve Azure Service Bus implementasyonları arasında
+  konfigürasyondan geçiş yapılabiliyor. Sipariş–ödeme akışı integration
+  event'ler üzerinden yürüyor, altyapı bileşenleri Docker Compose ile ayağa
+  kalkıyor.
+image: /images/projects-3.avif
 url: https://github.com/uhutsancar/Velora
 tags:
   - .NET
   - C#
   - Mikroservis
-  - Event Bus
+  - RabbitMQ
+  - Ocelot
+  - Docker
 date: 2026-07-03

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Microservices Event Driven">
+  <rect width="1200" height="630" fill="#2f4858"/>
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="300" text-anchor="middle">
+    <text x="600" y="300" font-size="126" letter-spacing="6" fill="#ffffff">MICROSERVICES</text>
+    <text x="600" y="450" font-size="126" letter-spacing="10">
+      <tspan fill="#00c58e">EVENT</tspan><tspan fill="#ffffff"> DRIVEN</tspan>
+    </text>
+  </g>
+</svg>

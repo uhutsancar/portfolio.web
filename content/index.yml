@@ -6,9 +6,9 @@ blog:
   description: Geliştirirken öğrendiklerimi not ediyorum
   items:
     - date: 12 Haz 2026
-      title: Nuxt'ta SSR sırasında aynı veriyi iki kez çekmemek
-      description: useAsyncData, Pinia ve payload mantığını bir arada kullanarak sunucuda çekilen verinin istemcide tekrar istenmesini nasıl engellediğimi anlatıyorum.
-      to: /blog/nuxt-ssr-veri-cekme
+      title: Velora'da mikroservisleri event bus ile konuşturmak
+      description: .NET ile kurduğum SellingBuddy servislerinde sipariş ve ödeme akışını RabbitMQ üzerinden event driven hale getirirken servis sınırları, integration event'ler ve kuyruk isimlendirmesi üzerine öğrendiklerim.
+      to: /blog/mikroservis-event-driven-mimari
     - date: 28 Nis 2026
       title: MongoDB'de embed mi reference mı?
       description: Veri modelini uygulamanın sorgu şekline göre kurmak, embed ve reference arasındaki seçim ve bu kararın pagination ile index performansına etkisi.

@@ -129,13 +129,13 @@ function getErrorMessage(
       "
     >
       <UFormField
-        label="Name"
+        label="İsim"
         name="name"
         required
       >
         <UInput
           v-model="state.name"
-          placeholder="Jane Doe"
+          placeholder="İsim"
           autocomplete="name"
           class="w-full"
         />
@@ -149,7 +149,7 @@ function getErrorMessage(
         <UInput
           v-model="state.email"
           type="email"
-          placeholder="jane@example.com"
+          placeholder="info@gmail.com"
           autocomplete="email"
           class="w-full"
         />
@@ -157,25 +157,25 @@ function getErrorMessage(
     </div>
 
     <UFormField
-      label="Subject"
+      label="Konu"
       name="subject"
     >
       <UInput
         v-model="state.subject"
-        placeholder="Project collaboration"
+        placeholder="Hakkında"
         class="w-full"
       />
     </UFormField>
 
     <UFormField
-      label="Message"
+      label="Mesaj"
       name="message"
       required
     >
       <UTextarea
         v-model="state.message"
         :rows="6"
-        placeholder="Tell me a bit about what you have in mind…"
+        placeholder="Mesaj"
         class="w-full"
       />
     </UFormField>

@@ -12,7 +12,7 @@ useHead({
     lang: 'tr',
   },
 
-  titleTemplate: (title) => title ? `${title} — Uhut Sancar` : 'Uhut Sancar — Frontend Developer',
+  titleTemplate: title => title ? `${title} — Uhut Sancar` : 'Uhut Sancar — Frontend Developer',
 
   meta: [
     {
@@ -67,10 +67,7 @@ useHead({
     },
   ],
 })
-
 </script>
-
-
 
 <template>
   <UApp>

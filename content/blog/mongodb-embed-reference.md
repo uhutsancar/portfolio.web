@@ -8,7 +8,7 @@ author:
     alt: Uhut Sancar
 date: 2026-04-28
 description: Veri modelini uygulamanın sorgu şekline göre kurmak, embed ve reference arasındaki seçim ve bu kararın pagination ile index performansına etkisi.
-image: /images/projects-4.avif
+image: /images/MongoDB_Logo.svg.webp
 minRead: 6
 ---
 

@@ -105,7 +105,7 @@ useSeoMeta({
               :to="project.url"
               class="flex items-center text-sm text-primary"
             >
-              View Project
+              projeyi görüntüle
 
               <UIcon
                 name="i-lucide-arrow-right"
