@@ -1,28 +1,8 @@
 title: Hakkımda
-
-description: >-
-  Bursa'da yaşayan bir Frontend Developer olarak yolculuğum, geliştirme
-  yaklaşımım ve üzerinde çalıştığım teknolojiler.
-
-seo:
-  title: Hakkımda
-
-  description: >-
-    Uhut Sancar — Bilgisayar Mühendisliği mezunu, Nuxt, Vue, Angular ve React
-    ile çalışan; backend, mobil ve cloud tarafında da geliştirme yapan
-    Frontend Developer.
-
-profile:
-  light: /profile.jpg
-
-  dark: /profile.jpg
-
-  alt: Uhut Sancar profil fotoğrafı
-
 content: |
   Merhaba, ben Uhut Sancar. Bursa'da yaşıyorum ve 2023'ten bu yana profesyonel olarak web uygulamaları geliştiriyorum.
 
-  Kütahya Dumlupınar Üniversitesi Bilgisayar Mühendisliği bölümünden 3.38/4 ortalamayla mezun oldum. Lisans eğitimimden önce İngilizce hazırlık programını tamamladım.
+  Kütahya Dumlupınar Üniversitesi Bilgisayar Mühendisliği bölümünden 3.41/4 ortalamayla mezun oldum. Lisans eğitimimden önce İngilizce hazırlık programını tamamladım.
 
   Yazılım geliştirmede özellikle frontend tarafına yoğunlaşıyorum. Bununla birlikte bir ürünü yalnızca kullanıcı arayüzünden ibaret görmediğim için backend geliştirme, veri modelleme, mobil uygulama geliştirme ve cloud servisleri üzerinde de çalışıyorum.
 
@@ -59,5 +39,11 @@ content: |
   Frontend alanındaki deneyimimi backend, mobil ve cloud teknolojileriyle birleştirerek uçtan uca ürün geliştirebilen bir yazılım geliştirici olarak ilerlemek istiyorum. Verilen tasarımı kodlayan değil; ürünün mimarisine, performansına ve kullanıcı deneyimine katkı sağlayan bir geliştirici olmayı hedefliyorum.
 
   [Projelerime](/projects) göz atabilir, birlikte çalışmak için [iletişime geçebilirsiniz](/contact).
-
-
+description: Bursa'da yaşayan bir Frontend Developer olarak yolculuğum, geliştirme yaklaşımım ve üzerinde çalıştığım teknolojiler.
+profile:
+  light: /profile.jpg
+  dark: /profile.jpg
+  alt: Uhut Sancar profil fotoğrafı
+seo:
+  title: Hakkımda
+  description: Uhut Sancar — Bilgisayar Mühendisliği mezunu, Nuxt, Vue, Angular ve React ile çalışan; backend, mobil ve cloud tarafında da geliştirme yapan Frontend Developer.
